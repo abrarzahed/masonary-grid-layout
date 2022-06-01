@@ -1,0 +1,48 @@
+header {
+  background: var(--white);
+  box-shadow: var(--shadow-2);
+  padding: 10px;
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    h1 {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      line-height: 1;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-family: var(--bodyFont);
+      div:nth-child(1) {
+        transform: skew(-10deg);
+        background: rgb(168, 2, 2);
+        color: #fff;
+        width: max-content;
+        text-align: center;
+        padding: 2px 4px;
+      }
+      div:nth-child(2) {
+        transform: skew(10deg);
+        width: max-content;
+        text-align: center;
+        background: var(--gray-800);
+        color: #fff;
+        padding: 2px 4px;
+      }
+    }
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 56px auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
